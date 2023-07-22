@@ -3,6 +3,7 @@
 }
 
 .App-logo {
+  margin-bottom: 10px;
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +36,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add margin between the two sections */
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px; /* Add margin around each section */
 }
