@@ -52,3 +52,27 @@
   align-items: center;
   margin: 0 10px; /* Add margin around each section */
 }
+
+.soccer-field {
+  background-color: lightgreen;
+  height: 100%;
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.basketball-field {
+  background-color: bisque;
+  height: 100%;
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
