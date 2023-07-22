@@ -1,34 +1,18 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import soccer from './soccer.svg';
-import basketball from './basketball.svg';
-import './App.css';
+import { Routes ,Route } from 'react-router-dom';
+
+import Home from './components/Home';
+import SoccerPage from './components/SoccerPage';
+import BasketballPage from './components/BasketballPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          What is your favorite sport?
-        </p>
-        <div class='horizontal'>
-          <div class='vertical'>
-            <img src={soccer} className="App-logo" alt="logo" />
-            <Button>
-              Soccer
-            </Button>
-          </div>
-          <div class="vertical">
-            <img src={basketball} className="App-logo" alt="logo" />
-            <Button
-            >
-              Basketball
-            </Button>
-          </div>
-        </div>
-      </header>
-    </div>
+    <Routes>
+      <Route exact path="/" component={Home} />
+      <Route path="/soccer" component={SoccerPage} />
+      <Route path="/basketball" component={BasketballPage} />
+      {/* Add more routes for other pages as needed */}
+    </Routes>
   );
 }
 
